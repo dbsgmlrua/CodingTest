@@ -46,10 +46,16 @@
     <Compile Include="BestAlbum.cs" />
     <Compile Include="Bridge.cs" />
     <Compile Include="Competition.cs" />
+    <Compile Include="Flour.cs" />
+    <Compile Include="FunctionDev.cs" />
     <Compile Include="Phonebook.cs" />
+    <Compile Include="Printer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scoville.cs" />
     <Compile Include="Spy.cs" />
+    <Compile Include="Steel.cs" />
+    <Compile Include="Stock.cs" />
     <Compile Include="Tower.cs" />
   </ItemGroup>
   <ItemGroup>

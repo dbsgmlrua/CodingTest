@@ -22,7 +22,24 @@ namespace Programmers
             string[] phonebook = { "119", "97674223", "1195524421" };
             int[] heights = { 6, 9, 5, 7, 4 };
             int[] trucks = {7, 4, 5, 6};
-            Console.WriteLine(Bridge.Instance.solution(2, 10, trucks));
+
+            int[] progress = { 40, 93, 30, 55, 60, 65 };
+            int[] speeds = { 60, 1, 30, 5, 10, 7 };
+
+            int[] priorities = {1, 1, 9, 1, 1, 1};
+            int locations = 0;
+
+            string arrangement = "()(((()())(())()))(())";
+
+            int[] prices = { 1, 2, 3, 2, 3 };
+
+            int[] scoville = { 1, 2, 3, 9, 10, 12 };
+
+
+            int[] dates = { 4, 10, 15 };
+            int[] supplies = { 20, 5, 10 };
+
+            Console.WriteLine(Flour.Instance.solution(4, dates, supplies, 30));
             Console.ReadLine();
         }
     }
