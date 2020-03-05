@@ -1,31 +1,34 @@
 ﻿using System;
 
-public class Competition
+namespace Programmers
 {
-    private static Competition m_instance;
-    public static Competition Instance
+    public class Competition
     {
-        get
+        private static Competition m_instance;
+        public static Competition Instance
         {
-            if(m_instance == null)
+            get
             {
-                m_instance = new Competition();
+                if (m_instance == null)
+                {
+                    m_instance = new Competition();
+                }
+                return m_instance;
             }
-            return m_instance;
         }
-    }
-    public string solution(string[] participant, string[] completion)
-    {
-        string answer = "";
-        
-        Array.Sort(participant);
-        Array.Sort(completion);
-        int i;
-        for (i = 0; i < completion.Length; i++)
+        public string solution(string[] participant, string[] completion)
         {
-            if (!participant[i].Equals(completion[i]))
-                return participant[i];
+            string answer = "";
+
+            Array.Sort(participant);
+            Array.Sort(completion);
+            int i;
+            for (i = 0; i < completion.Length; i++)
+            {
+                if (!participant[i].Equals(completion[i]))
+                    return participant[i];
+            }
+            return participant[i];
         }
-        return participant[i];
     }
 }
