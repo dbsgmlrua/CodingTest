@@ -7,20 +7,8 @@ using System.Threading.Tasks;
 
 namespace Programmers
 {
-    class BigNum
+    class BigNum : Singleton<BigNum>
     {
-        private static BigNum m_instance;
-        public static BigNum Instance
-        {
-            get
-            {
-                if (m_instance == null)
-                {
-                    m_instance = new BigNum();
-                }
-                return m_instance;
-            }
-        }
         public string solution(int[] numbers)
         {
             Array.Sort(numbers, (a, b) =>

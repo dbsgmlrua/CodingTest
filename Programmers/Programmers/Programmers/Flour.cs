@@ -6,20 +6,8 @@ using System.Threading.Tasks;
 
 namespace Programmers
 {
-    class Flour
+    class Flour : Singleton<Flour>
     {
-        private static Flour m_instance;
-        public static Flour Instance
-        {
-            get
-            {
-                if (m_instance == null)
-                {
-                    m_instance = new Flour();
-                }
-                return m_instance;
-            }
-        }
         public int solution(int stock, int[] dates, int[] supplies, int k)
         {
             int answer = 0;

@@ -6,20 +6,8 @@ using System.Threading.Tasks;
 
 namespace Programmers
 {
-    class PriorityQueue
+    class PriorityQueue : Singleton<PriorityQueue>
     {
-        private static PriorityQueue m_instance;
-        public static PriorityQueue Instance
-        {
-            get
-            {
-                if (m_instance == null)
-                {
-                    m_instance = new PriorityQueue();
-                }
-                return m_instance;
-            }
-        }
         public int[] solution(string[] operations)
         {
             int[] answer = new int[2];

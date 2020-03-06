@@ -2,20 +2,8 @@
 
 namespace Programmers
 {
-    public class Competition
+    class Competition : Singleton<Competition>
     {
-        private static Competition m_instance;
-        public static Competition Instance
-        {
-            get
-            {
-                if (m_instance == null)
-                {
-                    m_instance = new Competition();
-                }
-                return m_instance;
-            }
-        }
         public string solution(string[] participant, string[] completion)
         {
             string answer = "";

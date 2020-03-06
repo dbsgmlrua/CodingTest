@@ -6,21 +6,8 @@ using System.Threading.Tasks;
 
 namespace Programmers
 {
-    class Hindex
+    class Hindex : Singleton<Hindex>
     {
-        private static Hindex m_instance;
-        public static Hindex Instance
-        {
-            get
-            {
-                if (m_instance == null)
-                {
-                    m_instance = new Hindex();
-                }
-                return m_instance;
-            }
-        }
-
         public int solution(int[] citations)
         {
             int answer = 0;

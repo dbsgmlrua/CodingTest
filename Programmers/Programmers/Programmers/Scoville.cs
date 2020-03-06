@@ -6,21 +6,8 @@ using System.Threading.Tasks;
 
 namespace Programmers
 {
-    class Scoville
+    class Scoville : Singleton<Scoville>
     {
-        private static Scoville m_instance;
-        public static Scoville Instance
-        {
-            get
-            {
-                if (m_instance == null)
-                {
-                    m_instance = new Scoville();
-                }
-                return m_instance;
-            }
-        }
-
         public int solution(int[] scoville, int K)
         {
             int answer = 0;

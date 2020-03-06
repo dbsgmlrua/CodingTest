@@ -6,21 +6,8 @@ using System.Threading.Tasks;
 
 namespace Programmers
 {
-    class DiskController
+    class DiskController : Singleton<DiskController>
     {
-        private static DiskController m_instance;
-        public static DiskController Instance
-        {
-            get
-            {
-                if (m_instance == null)
-                {
-                    m_instance = new DiskController();
-                }
-                return m_instance;
-            }
-        }
-
         public int solution(int[,] jobs)
         {
             int answer = 0;

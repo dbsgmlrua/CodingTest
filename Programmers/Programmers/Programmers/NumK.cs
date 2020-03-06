@@ -6,20 +6,8 @@ using System.Threading.Tasks;
 
 namespace Programmers
 {
-    class NumK
+    class NumK : Singleton<NumK>
     {
-        private static NumK m_instance;
-        public static NumK Instance
-        {
-            get
-            {
-                if (m_instance == null)
-                {
-                    m_instance = new NumK();
-                }
-                return m_instance;
-            }
-        }
         public int[] solution(int[] array, int[,] commands)
         {
             int[] answer = new int[commands.GetLength(0)];
