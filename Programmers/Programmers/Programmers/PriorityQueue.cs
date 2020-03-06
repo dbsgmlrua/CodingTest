@@ -47,22 +47,20 @@ namespace Programmers
                         int.TryParse(words[1],out value);
                         if (value == 1)
                         {
-                            Pq.RemoveAt(Pq.Count - 1);
+                            Pq.Remove(Pq.Max());
                         }
                         else if(value == -1)
                         {
-                            Pq.RemoveAt(0);
+                            Pq.Remove(Pq.Min());
                         }
                     }
                 }
-                if (Pq.Count > 0)
-                    Pq = new List<int>(Pq.OrderBy(x => x));
             }
 
             if(Pq.Count > 0)
             {
-                answer[1] = Pq[0];
-                answer[0] = Pq[Pq.Count - 1];
+                answer[1] = Pq.Min();
+                answer[0] = Pq.Max();
             }
 
             return answer;

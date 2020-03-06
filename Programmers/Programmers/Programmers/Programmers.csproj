@@ -44,11 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BestAlbum.cs" />
+    <Compile Include="BigNum.cs" />
     <Compile Include="Bridge.cs" />
     <Compile Include="Competition.cs" />
     <Compile Include="DiskController.cs" />
     <Compile Include="Flour.cs" />
     <Compile Include="FunctionDev.cs" />
+    <Compile Include="Hindex.cs" />
+    <Compile Include="NumK.cs" />
     <Compile Include="Phonebook.cs" />
     <Compile Include="Printer.cs" />
     <Compile Include="PriorityQueue.cs" />

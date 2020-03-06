@@ -44,7 +44,13 @@ namespace Programmers
 
             string[] operations = { "I -45", "I 653", "D 1", "I -642", "I 45", "I 97", "D 1", "D -1", "I 333" };
 
-            Console.WriteLine(PriorityQueue.Instance.solution(operations));
+            int[] arrays = { 1, 5, 2, 6, 3, 7, 4 };
+            int[,] commands = { { 2, 5, 3 }, { 4, 4, 1 }, { 1, 7, 3 } };
+            
+            int[] Numbers = { 3, 30, 34, 5, 9 };
+            int[] citations = { 3, 0, 6, 1, 5 };
+
+            Console.WriteLine(Hindex.Instance.solution(citations));
             Console.ReadLine();
         }
     }
