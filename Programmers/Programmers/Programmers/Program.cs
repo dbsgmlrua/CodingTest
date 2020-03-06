@@ -39,7 +39,12 @@ namespace Programmers
             int[] dates = { 4, 10, 15 };
             int[] supplies = { 20, 5, 10 };
 
-            Console.WriteLine(Flour.Instance.solution(4, dates, supplies, 30));
+            int[,] jobs = { { 0, 3 }, { 1, 9 }, { 2, 6 } };
+
+
+            string[] operations = { "I -45", "I 653", "D 1", "I -642", "I 45", "I 97", "D 1", "D -1", "I 333" };
+
+            Console.WriteLine(PriorityQueue.Instance.solution(operations));
             Console.ReadLine();
         }
     }
