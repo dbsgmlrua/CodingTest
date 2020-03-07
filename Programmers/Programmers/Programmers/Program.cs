@@ -50,7 +50,12 @@ namespace Programmers
             int[] Numbers = { 3, 30, 34, 5, 9 };
             int[] citations = { 3, 0, 6, 1, 5 };
 
-            Console.WriteLine(Hindex.Instance.solution(citations));
+
+            int[] moktestanswer = { 1, 3, 2, 4, 2 };
+
+            int[,] baseball = { { 123, 1, 1 }, { 356, 1, 0 }, { 327, 2, 0 }, { 489, 0, 1 } };
+
+            Console.WriteLine(Baseball.Instance.solution(baseball));
             Console.ReadLine();
         }
     }
