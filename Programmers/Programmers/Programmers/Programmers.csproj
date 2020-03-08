@@ -45,12 +45,17 @@
   <ItemGroup>
     <Compile Include="BestAlbum.cs" />
     <Compile Include="BigNum.cs" />
+    <Compile Include="Boat.cs" />
     <Compile Include="Bridge.cs" />
+    <Compile Include="Bridges.cs" />
     <Compile Include="Competition.cs" />
     <Compile Include="DiskController.cs" />
+    <Compile Include="FindBigNum.cs" />
     <Compile Include="Flour.cs" />
     <Compile Include="FunctionDev.cs" />
     <Compile Include="Hindex.cs" />
+    <Compile Include="Jersey.cs" />
+    <Compile Include="Joysticks.cs" />
     <Compile Include="NumK.cs" />
     <Compile Include="Phonebook.cs" />
     <Compile Include="Printer.cs" />
@@ -58,10 +63,13 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scoville.cs" />
+    <Compile Include="Singleton.cs" />
     <Compile Include="Spy.cs" />
     <Compile Include="Steel.cs" />
     <Compile Include="Stock.cs" />
+    <Compile Include="TakeaLook.cs" />
     <Compile Include="Tower.cs" />
+    <Compile Include="Weight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

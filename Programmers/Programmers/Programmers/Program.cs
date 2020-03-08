@@ -55,7 +55,12 @@ namespace Programmers
 
             int[,] baseball = { { 123, 1, 1 }, { 356, 1, 0 }, { 327, 2, 0 }, { 489, 0, 1 } };
 
-            Console.WriteLine(Baseball.Instance.solution(baseball));
+            string joysticks = "JAZ";
+
+            string HugeNum = "1111";
+
+            int[] weight = { 3, 1, 6, 2, 7, 30, 1 };
+            Console.WriteLine(Weight.Instance.solution(weight));
             Console.ReadLine();
         }
     }
