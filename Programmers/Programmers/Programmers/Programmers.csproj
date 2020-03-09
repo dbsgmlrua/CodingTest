@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Airports.cs" />
     <Compile Include="BestAlbum.cs" />
     <Compile Include="BigNum.cs" />
     <Compile Include="Boat.cs" />
     <Compile Include="Bridge.cs" />
     <Compile Include="Bridges.cs" />
+    <Compile Include="ChangeWord.cs" />
     <Compile Include="Competition.cs" />
     <Compile Include="DiskController.cs" />
     <Compile Include="FindBigNum.cs" />
@@ -56,6 +58,7 @@
     <Compile Include="Hindex.cs" />
     <Compile Include="Jersey.cs" />
     <Compile Include="Joysticks.cs" />
+    <Compile Include="NetworkDfs.cs" />
     <Compile Include="NumK.cs" />
     <Compile Include="Phonebook.cs" />
     <Compile Include="Printer.cs" />
@@ -68,6 +71,7 @@
     <Compile Include="Steel.cs" />
     <Compile Include="Stock.cs" />
     <Compile Include="TakeaLook.cs" />
+    <Compile Include="TargetNumber.cs" />
     <Compile Include="Tower.cs" />
     <Compile Include="Weight.cs" />
   </ItemGroup>

@@ -60,7 +60,14 @@ namespace Programmers
             string HugeNum = "1111";
 
             int[] weight = { 3, 1, 6, 2, 7, 30, 1 };
-            Console.WriteLine(Weight.Instance.solution(weight));
+
+            int[] targetnumber = { 1, 1, 1, 1, 1 };
+            int[,] computers =  {{1, 1, 0}, {1, 1, 0}, {0, 0, 1}};
+
+            string[] words = { "hot", "dot", "dog", "lot", "log", "cog" };
+
+            string[,] tickets = { { "ICN", "SFO" }, { "ICN", "ATL" }, { "SFO", "ATL" }, { "ATL", "ICN" }, { "ATL", "SFO" } };
+            Console.WriteLine(Airports.Instance.solution(tickets));
             Console.ReadLine();
         }
     }
